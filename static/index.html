@@ -3,392 +3,419 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Micro 3D Metal Printing | Ultra-Precision Manufacturing | ±0.001" Tolerance</title>
-  <meta name="description" content="Micro-scale metal 3D printing: ±0.001" tolerance, 0.006" features, microfluidics, miniaturized electronics, watchmaking, precision medical instruments.">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    :root {
-      --primary-color: #1A5490;
-      --secondary-color: #0D3A66;
-      --accent-color: #64B5F6;
-    }
-
-    .navbar-brand {
-      color: var(--primary-color);
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-
-    .navbar-nav a::after {
-      background-color: var(--primary-color);
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #0D3A66 0%, #1A5490 50%, #64B5F6 100%);
-    }
-
-    .card {
-      border-top-color: var(--primary-color);
-    }
-
-    .stat-number {
-      background: linear-gradient(135deg, #0D3A66, #1A5490);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .timeline::before {
-      background: linear-gradient(180deg, #0D3A66, #1A5490, #64B5F6);
-    }
-
-    .timeline-dot {
-      border-color: var(--primary-color);
-    }
-
-    .form-submit {
-      background: linear-gradient(135deg, #0D3A66, #1A5490);
-    }
-  </style>
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Micro 3D Metal Printing",
-    "url": "https://micro3dprint.com",
-    "description": "Micro-scale metal 3D printing: ±0.001",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "url": "https://micro3dprint.com/contact.html"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Micro 3D Metal Printing",
-    "url": "https://micro3dprint.com"
-  }
-]
-</script>
-    <!-- ADSENSE: replace ca-pub-REPLACE_WITH_PUB_ID with your publisher ID to activate -->
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-REPLACE_WITH_PUB_ID" crossorigin="anonymous"></script> -->
+  <meta name="description" content="Micro 3D Print: metal additive manufacturing news, materials research, and DMLS / SLM / DED services for aerospace, medical, automotive, and industrial applications.">
+  <title>Micro 3D Print — Metal Additive Manufacturing News &amp; Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/editorial.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="navbar-brand">Micro3D Precision</div>
-      <button class="navbar-toggle">☰</button>
-      <ul class="navbar-nav">
-        <li><a href="#applications">Applications</a></li>
-        <li><a href="#capabilities">Capabilities</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="contact.html" class="cta-button">Get Quote</a></li>
-                    <li><a href="viewer.html" class="nav-link">3D Viewer</a></li>
+
+<!-- ── Header ─────────────────────────────────── -->
+<header class="ed-header">
+  <div class="ed-header-inner">
+    <a href="index.html" class="ed-logo">
+      MICRO<span class="ed-logo-accent">3D</span>PRINT
+    </a>
+    <button class="ed-nav-toggle" aria-label="Menu" onclick="document.querySelector('.ed-nav').classList.toggle('open')">&#9776;</button>
+    <nav class="ed-nav">
+      <a href="index.html" class="active">News</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="advertise.html">Advertise</a>
+      <a href="viewer.html">3D Viewer</a>
+    </nav>
+    <button class="ed-theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">&#9790;</button>
+  </div>
+</header>
+
+<!-- ── Breadcrumbs ────────────────────────────── -->
+<div class="ed-breadcrumbs">
+  <a href="index.html">Home</a> <span>/</span> Metal 3D Printing News
+</div>
+
+<!-- ── Main Layout ────────────────────────────── -->
+<div class="ed-layout">
+  <div class="ed-main">
+
+    <!-- Featured Story -->
+    <article class="ed-hero">
+      <img src="images/13-batch-build-plate-overhead.png" alt="Hyperion Systems 3D printed construction">
+      <div class="ed-hero-overlay"></div>
+      <div class="ed-hero-content">
+        <span class="ed-badge">Breaking</span>
+        <h1><a href="#">Hyperion Systems Prints First Load-Bearing Metal Structure for Residential Construction</a></h1>
+        <div class="ed-hero-meta">
+          <span>April 28, 2026</span>
+          <span>·</span>
+          <span>5 min read</span>
+          <span>·</span>
+          <span>By PrintWire Editorial</span>
+        </div>
+        <p class="ed-hero-excerpt">The Dubai-based startup used a proprietary DED system to print a 12-meter steel truss in under 18 hours — bypassing traditional welding entirely. Certified to Eurocode 3.</p>
+      </div>
+    </article>
+
+    <!-- Stats Bar -->
+    <div class="ed-stats">
+      <div class="ed-stat">
+        <div class="ed-stat-value">99.7%</div>
+        <div class="ed-stat-label">Part Density</div>
+      </div>
+      <div class="ed-stat">
+        <div class="ed-stat-value">±0.1mm</div>
+        <div class="ed-stat-label">Tolerance</div>
+      </div>
+      <div class="ed-stat">
+        <div class="ed-stat-value">6</div>
+        <div class="ed-stat-label">Alloy Families</div>
+      </div>
+      <div class="ed-stat">
+        <div class="ed-stat-value">48hr</div>
+        <div class="ed-stat-label">Quote Turnaround</div>
+      </div>
+    </div>
+
+    <!-- Latest News — Live RSS Feed -->
+    <div class="ed-section-label">
+      Latest News
+      <a href="#">View All &rarr;</a>
+    </div>
+    <div class="ed-card-grid" id="newsGrid">
+      <div style="grid-column: 1/-1; text-align:center; padding:2rem; color:var(--text-faint);">Loading latest news…</div>
+    </div>
+
+    <!-- More Stories — List Format -->
+    <div class="ed-section-label">
+      Analysis &amp; Deep Dives
+      <a href="#">View All &rarr;</a>
+    </div>
+    <div class="ed-list">
+      <article class="ed-list-item">
+        <img src="images/01-titanium-turbine.png" alt="Topology-optimized aerospace bracket">
+        <div>
+          <span class="ed-badge">Aerospace</span>
+          <div class="ed-card-meta">April 22, 2026 · 8 min read</div>
+          <h3><a href="#">Why Boeing Shifted From Casting to DMLS for 787 Nacelle Brackets — And What It Means for the Supply Chain</a></h3>
+          <p class="ed-card-excerpt">The decision to consolidate 17 cast parts into 3 printed components saved 4.2kg per aircraft — but the real story is what it does to Tier 2 suppliers.</p>
+        </div>
+      </article>
+      <article class="ed-list-item">
+        <img src="images/20-raw-vs-finished.png" alt="Inconel 718 impeller">
+        <div>
+          <span class="ed-badge">Materials</span>
+          <div class="ed-card-meta">April 20, 2026 · 7 min read</div>
+          <h3><a href="#">Inconel 718 vs. Haynes 282: Choosing the Right Superalloy for High-Temperature Metal AM</a></h3>
+          <p class="ed-card-excerpt">Both survive 700°C+, but their printability, post-processing requirements, and fatigue performance diverge significantly. A materials engineer's comparison.</p>
+        </div>
+      </article>
+      <article class="ed-list-item">
+        <img src="images/11-ded-nozzle-closeup.png" alt="Conformal cooling insert">
+        <div>
+          <span class="ed-badge">Industrial</span>
+          <div class="ed-card-meta">April 18, 2026 · 10 min read</div>
+          <h3><a href="#">Conformal Cooling 2026: The ROI Data From 200+ Injection Mold Inserts</a></h3>
+          <p class="ed-card-excerpt">We aggregated cycle-time data from 14 service bureaus. The average reduction: 32%. But the variance tells a more interesting story.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Industries Section -->
+    <div class="ed-section-label">
+      Industries We Cover
+    </div>
+    <div class="ed-card-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem;">
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/01-titanium-turbine.png" alt="Aerospace">
+        <div class="ed-card-body"><h3>Aerospace</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/08-medical-implant.png" alt="Medical">
+        <div class="ed-card-body"><h3>Medical</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/11-ded-nozzle-closeup.png" alt="Industrial">
+        <div class="ed-card-body"><h3>Industrial</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/06-automotive-manifold.png" alt="Automotive">
+        <div class="ed-card-body"><h3>Automotive</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/02-silver-jewelry-collection.png" alt="Jewelry">
+        <div class="ed-card-body"><h3>Jewelry</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/07-bronze-architectural-hardware.png" alt="Architecture">
+        <div class="ed-card-body"><h3>Architecture</h3></div>
+      </a>
+    </div>
+
+    <!-- Load More -->
+    <div class="ed-load-more">
+      <button>Load More Articles</button>
+    </div>
+
+  </div>
+
+  <!-- ── Sidebar ─────────────────────────────── -->
+  <aside class="ed-sidebar">
+
+    <!-- Newsletter -->
+    <div class="ed-sidebar-block ed-newsletter">
+      <h4>Newsletter</h4>
+      <p>Metal AM news, material breakthroughs, and industry analysis — delivered weekly. No spam.</p>
+      <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.querySelector('button').textContent='Subscribed!';this.querySelector('button').disabled=true;">
+        <input type="hidden" name="access_key" value="6f33053b-6d08-414b-9615-665f88c98da8">
+        <input type="hidden" name="subject" value="Newsletter Signup — micro3dprint.com">
+        <input type="hidden" name="from_name" value="Newsletter Signup">
+        <input type="hidden" name="ccs" value="printwire@gmail.com">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Popular Stories -->
+    <div class="ed-sidebar-block">
+      <h4>Most Read</h4>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">1</span>
+        <div>
+          <h3><a href="#">Ti6Al4V Fatigue Data: What 500 Test Bars Reveal About As-Built vs. HIP'd Parts</a></h3>
+          <div class="ed-popular-meta">12.4K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">2</span>
+        <div>
+          <h3><a href="#">The Real Cost Per Part: DMLS vs. Investment Casting at Volume</a></h3>
+          <div class="ed-popular-meta">9.8K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">3</span>
+        <div>
+          <h3><a href="#">Binder Jetting Metal: Where It Actually Makes Sense (And Where It Doesn't)</a></h3>
+          <div class="ed-popular-meta">8.1K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">4</span>
+        <div>
+          <h3><a href="#">316L Surface Roughness: Comparing 12 Post-Processing Methods Head to Head</a></h3>
+          <div class="ed-popular-meta">7.3K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">5</span>
+        <div>
+          <h3><a href="#">Why Your Metal AM Service Bureau Keeps Missing Tolerances (And How to Fix the RFQ)</a></h3>
+          <div class="ed-popular-meta">6.9K reads</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ed-sidebar-block" style="text-align:center; color: var(--text-faint); font-size: 0.75rem; padding: 2.5rem 1rem;">
+      <div style="border: 1px dashed var(--border); border-radius: 4px; padding: 2rem 1rem;">
+        Ad Space<br>300×250
+      </div>
+    </div>
+
+    <!-- Network Links -->
+    <div class="ed-sidebar-block">
+      <h4>PrintWire Network</h4>
+      <div class="ed-network-links">
+        <a href="https://metalpowder.co">Metal Powder</a>
+        <a href="https://3dprinttissue.com">Bioprinting</a>
+        <a href="https://3dprintfood.com">Food Printing</a>
+        <a href="https://3dprintceramic.com">Ceramics</a>
+        <a href="https://3dprintcircuitry.com">Electronics</a>
+        <a href="https://3dprintjewelry.com">Jewelry</a>
+        <a href="https://3dprintarchitecture.com">Architecture</a>
+        <a href="https://3dprintpipes.com">Industrial</a>
+        <a href="https://sendcutship.com">Manufacturing</a>
+        <a href="https://dmls3d.com">DMLS3D</a>
+        <a href="https://3dprinttitanium.com">Titanium</a>
+        <a href="https://3dprintsolar.com">Solar</a>
+      </div>
+    </div>
+
+    <!-- Quick Quote CTA -->
+    <div class="ed-sidebar-block" style="background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(0,168,204,0.04)); border-color: var(--border-accent);">
+      <h4 style="color: var(--accent);">Get a Quote</h4>
+      <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.5;">Need metal parts printed? Describe your project and get a response within 24 hours.</p>
+      <a href="contact.html" style="display:block;text-align:center;padding:0.65rem;background:var(--accent);border-radius:4px;color:#000;font-weight:600;font-size:0.8rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent-dark)'" onmouseout="this.style.background='var(--accent)'">Request Quote</a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ── Footer ─────────────────────────────────── -->
+<footer class="ed-footer">
+  <div class="ed-footer-inner">
+    <div class="ed-footer-brand">
+      <div class="ed-logo" style="font-size:1.3rem; margin-bottom: 0.5rem;">MICRO<span class="ed-logo-accent">3D</span>PRINT</div>
+      <p>The authoritative source for metal additive manufacturing news, materials research, and service bureau intelligence. Part of the PrintWire network — 194 sites covering every vertical in 3D printing.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">News</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-background"><img src="images/01-titanium-turbine.png" alt="Metal 3D Printing" loading="lazy"><div class="hero-overlay"></div></div><div class="hero-content">
-      <h1>Micro-Scale Precision Manufacturing</h1>
-      <p>Ultra-precision metal 3D printing: ±0.001" tolerance, 0.006" minimum features, microfluidics, miniaturized electronics</p>
-      <div class="hero-cta">
-        <a href="#applications" class="btn btn-primary">Explore Applications</a>
-        <a href="contact.html" class="btn btn-secondary">Request Capability Brief</a>
-      </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">DMLS / SLM</a></li>
+        <li><a href="services.html">Rapid Prototyping</a></li>
+        <li><a href="services.html">Post-Processing</a></li>
+        <li><a href="advertise.html">Advertise With Us</a></li>
+      </ul>
     </div>
-  </section>
-
-  <!-- Key Statistics -->
-  <section class="container" style="padding-top: 3rem; padding-bottom: 3rem; border-bottom: none;">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">±0.001"</div>
-        <div class="stat-label">Tolerance Capability</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">0.006"</div>
-        <div class="stat-label">Minimum Feature Size</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">50-100 µm</div>
-        <div class="stat-label">Layer Thickness</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">100+</div>
-        <div class="stat-label">Components/Build</div>
-      </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li><a href="#">Aerospace</a></li>
+        <li><a href="#">Medical</a></li>
+        <li><a href="#">Automotive</a></li>
+        <li><a href="#">Industrial</a></li>
+        <li><a href="#">Materials</a></li>
+      </ul>
     </div>
-  </section>
+  </div>
+  <div class="ed-footer-bottom">
+    <span>&copy; 2026 MICRO 3D PRINT. Part of the <a href="https://3dprint.space" style="color:var(--accent);">PrintWire</a> network.</span>
+    <span>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </span>
+  </div>
+</footer>
 
-  <!-- Applications -->
-  <section id="applications">
-    <div class="container">
-      <h2>Micro-Manufacturing Applications</h2>
+<script>
+// ── Mobile nav toggle ──
+document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
+  document.querySelector('.ed-nav').classList.toggle('open');
+});
 
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="card-icon" style="background: #E3F2FD; color: #1A5490;">💧</div>
-          <h3>Microfluidics</h3>
-          <p><strong>Capability:</strong> Channels 50-200 µm, precise geometries</p>
-          <p><strong>Applications:</strong> Lab-on-chip devices, diagnostic systems, drug delivery</p>
-          <p>Integrated microfluidic components with serpentine channels, mixing chambers, and reaction vessels. Traditional manufacturing requires multiple bonded layers. DMLS produces monolithic structures with perfect internal geometry.</p>
-        </div>
+// ── Theme toggle (light/dark) ──
+(function() {
+  const btn = document.getElementById('themeToggle');
+  const root = document.documentElement;
 
-        <div class="card">
-          <div class="card-icon" style="background: #F3E5F5; color: #5E35B1;">⚡</div>
-          <h3>Miniaturized Electronics</h3>
-          <p><strong>Capability:</strong> Precision housings, heat sinks, connectors</p>
-          <p><strong>Applications:</strong> Implantable devices, sensors, RF components</p>
-          <p>Ultra-compact metal enclosures for medical implants, wearables, and IoT devices. Thermal management features integrated. Biocompatible materials for in-body applications.</p>
-        </div>
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('ed-theme', theme);
+    btn.innerHTML = theme === 'dark' ? '&#9790;' : '&#9728;';
+    btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+  }
 
-        <div class="card">
-          <div class="card-icon" style="background: #FFF3E0; color: #E65100;">⏰</div>
-          <h3>Watchmaking & Horology</h3>
-          <p><strong>Capability:</strong> Mechanical components, cases, movements</p>
-          <p><strong>Applications:</strong> Luxury watches, chronographs, complications</p>
-          <p>Precision watchmaking parts: balance wheels, escape wheels, spring barrels. Complex geometries unachievable with traditional machining. Weight optimization for accuracy.</p>
-        </div>
+  // Init: check saved preference, then system preference
+  const saved = localStorage.getItem('ed-theme');
+  if (saved) {
+    setTheme(saved);
+  } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    setTheme('light');
+  } else {
+    setTheme('dark');
+  }
 
-        <div class="card">
-          <div class="card-icon" style="background: #E8F5E9; color: #1B5E20;">🏥</div>
-          <h3>Medical Instruments</h3>
-          <p><strong>Capability:</strong> Surgical tools, diagnostic devices</p>
-          <p><strong>Applications:</strong> Endoscope components, catheters, surgical guides</p>
-          <p>Ultra-precise instruments for minimally invasive surgery. Integrated features for improved functionality. Biocompatible titanium or stainless steel.</p>
-        </div>
+  btn.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme') || 'dark';
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+})();
 
-        <div class="card">
-          <div class="card-icon" style="background: #FCE4EC; color: #880E4F;">🔬</div>
-          <h3>Research & Academia</h3>
-          <p><strong>Capability:</strong> Custom lab equipment, experimental apparatus</p>
-          <p><strong>Applications:</strong> Physics experiments, chemistry reactors, test fixtures</p>
-          <p>Rapid prototyping of complex experimental setups. Easy iteration for research optimization. Batch manufacturing for academic studies.</p>
-        </div>
+// ── RSS News Feed ──
+(function() {
+  var grid = document.getElementById('newsGrid');
+  if (!grid) return;
 
-        <div class="card">
-          <div class="card-icon" style="background: #F1F8E9; color: #33691E;">🎯</div>
-          <h3>Precision Sensors</h3>
-          <p><strong>Capability:</strong> Transducers, calibration standards</p>
-          <p><strong>Applications:</strong> Instrumentation, metrology, testing</p>
-          <p>Precision-manufactured sensor components with integrated geometries. Minimal tolerance stackup with monolithic construction.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  var feeds = [
+    { url: 'https://news.google.com/rss/search?q=metal+3d+printing+additive+manufacturing&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://news.google.com/rss/search?q=DMLS+SLM+metal+printing&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://news.google.com/rss/search?q=metal+additive+manufacturing+titanium+inconel&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://www.metal-am.com/feed/', name: 'Metal AM' },
+    { url: 'https://3dprintingindustry.com/feed/', name: '3DPI' }
+  ];
 
-  <!-- Capabilities -->
-  <section id="capabilities" style="background: #f8f9fa;">
-    <div class="container">
-      <h2>Ultra-Precision Capabilities</h2>
+  var api = 'https://api.rss2json.com/v1/api.json?rss_url=';
+  var articles = [];
+  var loaded = 0;
+  var total = feeds.length;
+  var fallbackImgs = [
+    'images/13-batch-build-plate-overhead.png','images/20-raw-vs-finished.png','images/15-support-removal.png',
+    'images/10-dmls-machine-interior.png','images/08-medical-implant.png','images/18-powder-handling.png',
+    'images/01-titanium-turbine.png','images/11-ded-nozzle-closeup.png'
+  ];
 
-      <table class="specs-table">
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Standard DMLS</th>
-            <th>Micro3D Precision</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Tolerance</strong></td>
-            <td>±0.003" + ±0.001"/in</td>
-            <td>±0.001" on critical features</td>
-          </tr>
-          <tr>
-            <td><strong>Minimum Feature</strong></td>
-            <td>0.006" diameter</td>
-            <td>0.004" achievable</td>
-          </tr>
-          <tr>
-            <td><strong>Layer Thickness</strong></td>
-            <td>0.050-0.100mm</td>
-            <td>0.025-0.050mm for detail</td>
-          </tr>
-          <tr>
-            <td><strong>Surface Finish</strong></td>
-            <td>Ra 1.6-3.2 µm</td>
-            <td>Ra 0.2-0.8 µm achievable</td>
-          </tr>
-          <tr>
-            <td><strong>Geomet Complexity</strong></td>
-            <td>High</td>
-            <td>Ultra-high with micro-features</td>
-          </tr>
-          <tr>
-            <td><strong>Component Density</strong></td>
-            <td>1-5 per build</td>
-            <td>50-150 per build (nesting)</td>
-          </tr>
-        </tbody>
-      </table>
+  var timeout = setTimeout(function() { render(); }, 8000);
 
-      <h3 style="margin-top: 2rem;">Why Micro3D for Ultra-Precision?</h3>
-      <div class="grid grid-2">
-        <div>
-          <ul class="feature-list">
-            <li>Tolerance control: ±0.001" on critical dimensions</li>
-            <li>Fine detail preservation: 0.004-0.006" features</li>
-            <li>Batch manufacturing: 100+ components per build</li>
-            <li>Cost per unit decreases dramatically with volume</li>
-            <li>Complex assemblies as single parts</li>
-          </ul>
-        </div>
-        <div>
-          <ul class="feature-list">
-            <li>No micro-machining required for many applications</li>
-            <li>Reduced assembly: integrated features</li>
-            <li>Internal geometries impossible otherwise</li>
-            <li>Rapid prototyping for research and development</li>
-            <li>High repeatability across batches</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  feeds.forEach(function(feed) {
+    fetch(api + encodeURIComponent(feed.url))
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data.status === 'ok' && data.items) {
+          data.items.forEach(function(item) {
+            articles.push({
+              title: item.title,
+              link: item.link,
+              desc: stripHtml(item.description).substring(0,140) + '…',
+              date: item.pubDate,
+              img: item.thumbnail || (item.enclosure && item.enclosure.link) || '',
+              source: feed.name
+            });
+          });
+        }
+      })
+      .catch(function(){})
+      .then(function() {
+        loaded++;
+        if (loaded === total) { clearTimeout(timeout); render(); }
+      });
+  });
 
-  <!-- Process -->
-  <section id="process">
-    <div class="container">
-      <h2>Micro-Precision Manufacturing Process</h2>
+  function stripHtml(html) {
+    var d = document.createElement('div'); d.innerHTML = html;
+    return d.textContent || '';
+  }
+  function esc(s) {
+    var d = document.createElement('div'); d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>1. Design & Optimization</h4>
-            <p>CAD files reviewed for ultra-precision manufacturing. Layout optimized for batch nesting (100+ parts per build). Tolerances validated achievable. Support strategy designed for minimal removal.</p>
-          </div>
-        </div>
+  function render() {
+    if (!articles.length) {
+      grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-faint);">Unable to load news feeds.</div>';
+      return;
+    }
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>2. Fine Layer DMLS</h4>
-            <p>Layer thickness reduced to 0.025-0.050mm for enhanced detail. Laser parameters optimized for precision. Build time longer but surface finish superior. 99.5%+ density achieved.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>3. Post-Processing</h4>
-            <p>Support removal via micro-machining. Surface polishing to Ra 0.2-0.8 µm. CNC finishing for ±0.001" tolerance features. Dimensional verification via CMM or SEM.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>4. Quality Verification</h4>
-            <p>100% inspection of critical dimensions. SEM analysis for feature detail. Functional testing as applicable. Certification for medical/aerospace applications.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Case Studies -->
-  <section>
-    <div class="container">
-      <h2>Micro-Precision Case Studies</h2>
-
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Microfluidic Diagnostic Device</h3>
-          <p><strong>Challenge:</strong> Lab-on-chip device required integrated microfluidic channels (100 µm) with precision serpentine mixers. Traditional bonded layer approach impractical.</p>
-          <p><strong>Solution:</strong> Monolithic DMLS manufacturing with 0.004" minimum channels. 100+ units per build.</p>
-          <p><strong>Result:</strong> $2/unit manufacturing cost vs $50+ traditional. 6-week lead time vs 16 weeks.</p>
-        </div>
-
-        <div class="card">
-          <h3>Implantable Cardiac Device</h3>
-          <p><strong>Challenge:</strong> Ultra-compact titanium housing for pacemaker required ±0.001" tolerances and biocompatible surface.</p>
-          <p><strong>Solution:</strong> Fine-layer DMLS Ti6Al4V with 0.004" wall thickness. Integrated features for internal electronics mounting.</p>
-          <p><strong>Result:</strong> 15% smaller device volume. 100% FDA biocompatibility verified.</p>
-        </div>
-
-        <div class="card">
-          <h3>Luxury Watchmaking Components</h3>
-          <p><strong>Challenge:</strong> Mechanical watch escape wheel required 0.002" precision with complex geometry for improved accuracy.</p>
-          <p><strong>Solution:</strong> Gold DMLS with ultra-fine layer control. Integrated jewel settings.</p>
-          <p><strong>Result:</strong> Chronometer-grade accuracy. Collectors' item value enhanced through manufacturing innovation.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- News -->
-  <section>
-    <div class="container">
-      <h2>Latest Micro Manufacturing News</h2>
-      <div id="news-feed" class="news-feed"></div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section style="background: linear-gradient(135deg, #0D3A66, #1A5490); color: white; text-align: center;">
-    <div class="container">
-      <h2 style="color: white;">Ready to Manufacture at Micro-Scale?</h2>
-      <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 2rem;">Get a capability brief for your ultra-precision project</p>
-      <a href="contact.html" class="btn" style="background: white; color: #1A5490; font-weight: 700; padding: 1rem 2rem; font-size: 1.1rem;">Contact Our Engineers</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Micro3D Precision</h4>
-        <p>Ultra-precision metal 3D printing for microfluidics, medical devices, and specialized applications.</p>
-        <div class="social-links">
-          <a href="#" title="LinkedIn">in</a>
-          <a href="#" title="Twitter">𝕏</a>
-          <a href="#" title="Email">✉</a>
-        </div>
-      </div>
-
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div class="footer-section">
-        <h4>Applications</h4>
-        <a href="#applications">Microfluidics</a>
-        <a href="#applications">Medical Devices</a>
-        <a href="#applications">Watchmaking</a>
-        <a href="#applications">Electronics</a>
-      </div>
-
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#process">Process</a>
-        <a href="#">Case Studies</a>
-        <a href="#">Blog</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Micro3D Precision. All rights reserved. | Privacy Policy | Terms of Service</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-
-    <div class="network-badge" style="background:#111;border-top:1px solid #333;text-align:center;padding:0.6rem 1rem;font-size:0.75rem;color:#888;">
-      Part of the <a href="https://dmls3d.com" style="color:#aaa;text-decoration:none;font-weight:600;">Metal 3D Printing Network</a>
-    </div>
+    articles.sort(function(a,b){ return new Date(b.date) - new Date(a.date); });
+    var top = articles.slice(0, 8);
+    var html = '';
+    top.forEach(function(a, i) {
+      var d = new Date(a.date);
+      var ds = d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
+      var img = a.img || fallbackImgs[i % fallbackImgs.length];
+      var fb = fallbackImgs[(i+1) % fallbackImgs.length];
+      html += '<article class="ed-card" style="cursor:pointer" onclick="window.open(\'' + esc(a.link) + '\',\'_blank\',\'noopener\')">' +
+        '<img class="ed-card-img" src="' + esc(img) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' + fb + '\'">' +
+        '<div class="ed-card-body">' +
+          '<span class="ed-badge">' + esc(a.source) + '</span>' +
+          '<div class="ed-card-meta">' + ds + '</div>' +
+          '<h3><a href="' + esc(a.link) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">' + esc(a.title) + '</a></h3>' +
+          '<p class="ed-card-excerpt">' + esc(a.desc) + '</p>' +
+        '</div></article>';
+    });
+    grid.innerHTML = html;
+  }
+})();
+</script>
 </body>
 </html>
