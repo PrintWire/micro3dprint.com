@@ -1,19 +1,18 @@
 baseURL = "https://micro3dprint.com/"
 languageCode = "en-us"
-title = "MICRO3DPRINT"
+title = "Micro 3D Print"
 
-[params]
-  description = "Metal additive manufacturing news, research, and services. DMLS, SLM, EBM coverage for aerospace, medical, and industrial applications."
-  siteName = "MICRO3DPRINT"
-  tagline = "The authoritative source for metal additive manufacturing news"
-
-[taxonomies]
-  tag = "tags"
+[outputs]
+  home = ["HTML", "JSON"]
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
-[outputs]
-  home = ["HTML", "JSON"]
+[params]
+siteName     = "Micro 3D Print"
+logoHtml     = 'MICRO&nbsp;<span class="ed-logo-accent">3D&nbsp;PRINT</span>'
+description  = "Micro 3D Print: additive manufacturing for microfluidics — printed lab-on-a-chip devices, microreactors, micromixers, and organ-on-chip. News, research, and a supplier directory."
+ogImage      = "/images/mp01_microfluidic_chip.png"
+contactEmail = "maxdavisgroup@gmail.com"

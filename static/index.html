@@ -3,82 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Micro 3D Print: metal additive manufacturing news, materials research, and DMLS / SLM / DED services for aerospace, medical, automotive, and industrial applications.">
-  <title>Micro 3D Print — Metal Additive Manufacturing News &amp; Services</title>
+  <meta name="description" content="Micro 3D Print: additive manufacturing for microfluidics — printed lab-on-a-chip devices, microreactors, micromixers, and organ-on-chip. News, research, and a supplier directory.">
+  <title>Micro 3D Print — Microfluidics &amp; Lab-on-Chip Additive Manufacturing News &amp; Suppliers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/editorial.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Micro 3D Print — Microfluidics &amp; Lab-on-Chip Additive Manufacturing News &amp; Suppliers">
+  <meta property="og:description" content="Micro 3D Print: additive manufacturing for microfluidics — printed lab-on-a-chip devices, microreactors, micromixers, and organ-on-chip. News, research, and a supplier directory.">
+  <meta property="og:image" content="https://micro3dprint.com/images/mp01_microfluidic_chip.png">
+  <meta property="og:url" content="https://micro3dprint.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://micro3dprint.com/images/mp01_microfluidic_chip.png">
 </head>
 <body>
 
-<!-- ── Header ─────────────────────────────────── -->
 <header class="ed-header">
   <div class="ed-header-inner">
     <a href="index.html" class="ed-logo">
-      MICRO<span class="ed-logo-accent">3D</span>PRINT
+      MICRO&nbsp;<span class="ed-logo-accent">3D&nbsp;PRINT</span>
     </a>
     <button class="ed-nav-toggle" aria-label="Menu" onclick="document.querySelector('.ed-nav').classList.toggle('open')">&#9776;</button>
     <nav class="ed-nav">
       <a href="index.html" class="active">News</a>
-      <a href="services.html">Services</a>
+      <a href="/articles/">Research</a>
+      <a href="#suppliers">Suppliers</a>
+      <a href="#suppliers">Materials</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="advertise.html">Advertise</a>
-      <a href="viewer.html">3D Viewer</a>
     </nav>
     <button class="ed-theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">&#9790;</button>
   </div>
 </header>
 
-<!-- ── Breadcrumbs ────────────────────────────── -->
 <div class="ed-breadcrumbs">
-  <a href="index.html">Home</a> <span>/</span> Metal 3D Printing News
+  <a href="index.html">Home</a> <span>/</span> Microfluidics &amp; Lab-on-Chip Additive Manufacturing News
 </div>
 
-<!-- ── Main Layout ────────────────────────────── -->
 <div class="ed-layout">
   <div class="ed-main">
 
-    <!-- Featured Story -->
     <article class="ed-hero">
-      <img src="images/13-batch-build-plate-overhead.png" alt="Hyperion Systems 3D printed construction">
+      <img src="images/mp01_microfluidic_chip.png" alt="3D printed microfluidic lab-on-a-chip">
       <div class="ed-hero-overlay"></div>
       <div class="ed-hero-content">
-        <span class="ed-badge">Breaking</span>
-        <h1><a href="#">Hyperion Systems Prints First Load-Bearing Metal Structure for Residential Construction</a></h1>
+        <span class="ed-badge">Microfluidics</span>
+        <h1><a href="#">Printed Microfluidics Skip the Cleanroom</a></h1>
         <div class="ed-hero-meta">
-          <span>April 28, 2026</span>
+          <span>June 27, 2026</span>
           <span>·</span>
-          <span>5 min read</span>
+          <span>8 min read</span>
           <span>·</span>
           <span>By PrintWire Editorial</span>
         </div>
-        <p class="ed-hero-excerpt">The Dubai-based startup used a proprietary DED system to print a 12-meter steel truss in under 18 hours — bypassing traditional welding entirely. Certified to Eurocode 3.</p>
+        <p class="ed-hero-excerpt">Sealed channel networks, droplet generators, and organ-on-chip devices printed in a single pass are replacing photolithography — no masks, no bonding step, and geometry that etching can't reach.</p>
       </div>
     </article>
 
-    <!-- Stats Bar -->
     <div class="ed-stats">
       <div class="ed-stat">
-        <div class="ed-stat-value">99.7%</div>
-        <div class="ed-stat-label">Part Density</div>
+        <div class="ed-stat-value">nanoliter</div>
+        <div class="ed-stat-label">Fluid Volumes</div>
       </div>
       <div class="ed-stat">
-        <div class="ed-stat-value">±0.1mm</div>
-        <div class="ed-stat-label">Tolerance</div>
-      </div>
-      <div class="ed-stat">
-        <div class="ed-stat-value">6</div>
-        <div class="ed-stat-label">Alloy Families</div>
+        <div class="ed-stat-value">1-piece</div>
+        <div class="ed-stat-label">Sealed Chips</div>
       </div>
       <div class="ed-stat">
         <div class="ed-stat-value">48hr</div>
-        <div class="ed-stat-label">Quote Turnaround</div>
+        <div class="ed-stat-label">Prototyping</div>
+      </div>
+      <div class="ed-stat">
+        <div class="ed-stat-value">47+</div>
+        <div class="ed-stat-label">Active Suppliers</div>
       </div>
     </div>
 
-    <!-- PrintWire Originals — our own articles (featured) -->
     <div class="ed-section-label" style="border-left:3px solid var(--accent);padding-left:0.6rem;">
       PrintWire Originals
       <a href="/articles/">View All &rarr;</a>
@@ -87,219 +89,224 @@
       <div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-faint);">Loading PrintWire articles…</div>
     </div>
 
-    <!-- Latest News — Live RSS Feed -->
     <div class="ed-section-label">
-      Latest News
+      Latest Industry News
       <a href="#">View All &rarr;</a>
     </div>
     <div class="ed-card-grid" id="newsGrid">
       <div style="grid-column: 1/-1; text-align:center; padding:2rem; color:var(--text-faint);">Loading latest news…</div>
     </div>
 
-    <!-- More Stories — List Format -->
     <div class="ed-section-label">
       Analysis &amp; Deep Dives
       <a href="#">View All &rarr;</a>
     </div>
     <div class="ed-list">
       <article class="ed-list-item">
-        <img src="images/01-titanium-turbine.png" alt="Topology-optimized aerospace bracket">
+        <img src="images/mp01_microfluidic_chip.png" alt="Printed lab-on-a-chip">
         <div>
-          <span class="ed-badge">Aerospace</span>
-          <div class="ed-card-meta">April 22, 2026 · 8 min read</div>
-          <h3><a href="#">Why Boeing Shifted From Casting to DMLS for 787 Nacelle Brackets — And What It Means for the Supply Chain</a></h3>
-          <p class="ed-card-excerpt">The decision to consolidate 17 cast parts into 3 printed components saved 4.2kg per aircraft — but the real story is what it does to Tier 2 suppliers.</p>
+          <span class="ed-badge">Lab-on-Chip</span>
+          <div class="ed-card-meta">June 25, 2026 · 9 min read</div>
+          <h3><a href="#">Printed Lab-on-a-Chip Devices Skip the Cleanroom</a></h3>
+          <p class="ed-card-excerpt">Sealed channel networks print in one pass — no photolithography, no bonding — putting custom microfluidics in reach of any lab.</p>
         </div>
       </article>
       <article class="ed-list-item">
-        <img src="images/20-raw-vs-finished.png" alt="Inconel 718 impeller">
+        <img src="images/mp03_droplet_junction.png" alt="Printed droplet generator">
         <div>
-          <span class="ed-badge">Materials</span>
-          <div class="ed-card-meta">April 20, 2026 · 7 min read</div>
-          <h3><a href="#">Inconel 718 vs. Haynes 282: Choosing the Right Superalloy for High-Temperature Metal AM</a></h3>
-          <p class="ed-card-excerpt">Both survive 700°C+, but their printability, post-processing requirements, and fatigue performance diverge significantly. A materials engineer's comparison.</p>
+          <span class="ed-badge">Droplets</span>
+          <div class="ed-card-meta">June 21, 2026 · 7 min read</div>
+          <h3><a href="#">Printed Droplet Generators Hit Nanoliter Precision</a></h3>
+          <p class="ed-card-excerpt">T-junction and flow-focusing geometries printed to spec are producing monodisperse droplets for assays and encapsulation.</p>
         </div>
       </article>
       <article class="ed-list-item">
-        <img src="images/11-ded-nozzle-closeup.png" alt="Conformal cooling insert">
+        <img src="images/mp07_organ_chip.png" alt="Printed organ-on-a-chip">
         <div>
-          <span class="ed-badge">Industrial</span>
-          <div class="ed-card-meta">April 18, 2026 · 10 min read</div>
-          <h3><a href="#">Conformal Cooling 2026: The ROI Data From 200+ Injection Mold Inserts</a></h3>
-          <p class="ed-card-excerpt">We aggregated cycle-time data from 14 service bureaus. The average reduction: 32%. But the variance tells a more interesting story.</p>
+          <span class="ed-badge">Organ-on-Chip</span>
+          <div class="ed-card-meta">June 18, 2026 · 10 min read</div>
+          <h3><a href="#">Organ-on-Chip Devices Print with Integrated Membranes</a></h3>
+          <p class="ed-card-excerpt">Multi-material printing is building perfusable tissue chips — channels, wells, and membranes — as a single device.</p>
         </div>
       </article>
     </div>
 
-    <!-- Industries Section -->
     <div class="ed-section-label">
-      Industries We Cover
+      Applications We Cover
     </div>
     <div class="ed-card-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem;">
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/01-titanium-turbine.png" alt="Aerospace">
-        <div class="ed-card-body"><h3>Aerospace</h3></div>
+        <img class="ed-card-img" src="images/mp01_microfluidic_chip.png" alt="Lab-on-Chip">
+        <div class="ed-card-body"><h3>Lab-on-Chip</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/08-medical-implant.png" alt="Medical">
-        <div class="ed-card-body"><h3>Medical</h3></div>
+        <img class="ed-card-img" src="images/mp03_droplet_junction.png" alt="Droplet Generators">
+        <div class="ed-card-body"><h3>Droplet Generators</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/11-ded-nozzle-closeup.png" alt="Industrial">
-        <div class="ed-card-body"><h3>Industrial</h3></div>
+        <img class="ed-card-img" src="images/mp04_micro_mixer.png" alt="Micromixers">
+        <div class="ed-card-body"><h3>Micromixers</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/06-automotive-manifold.png" alt="Automotive">
-        <div class="ed-card-body"><h3>Automotive</h3></div>
+        <img class="ed-card-img" src="images/mp05_microreactor.png" alt="Microreactors">
+        <div class="ed-card-body"><h3>Microreactors</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/02-silver-jewelry-collection.png" alt="Jewelry">
-        <div class="ed-card-body"><h3>Jewelry</h3></div>
+        <img class="ed-card-img" src="images/mp07_organ_chip.png" alt="Organ-on-Chip">
+        <div class="ed-card-body"><h3>Organ-on-Chip</h3></div>
       </a>
       <a href="#" class="ed-card" style="text-align:center;">
-        <img class="ed-card-img" src="images/07-bronze-architectural-hardware.png" alt="Architecture">
-        <div class="ed-card-body"><h3>Architecture</h3></div>
+        <img class="ed-card-img" src="images/mp06_micro_valve.png" alt="Micro-Valves">
+        <div class="ed-card-body"><h3>Micro-Valves</h3></div>
       </a>
     </div>
 
-    <!-- Load More -->
     <div class="ed-load-more">
       <button>Load More Articles</button>
     </div>
 
   </div>
 
-  <!-- ── Sidebar ─────────────────────────────── -->
   <aside class="ed-sidebar">
 
-    <!-- Newsletter -->
     <div class="ed-sidebar-block ed-newsletter">
       <h4>Newsletter</h4>
-      <p>Metal AM news, material breakthroughs, and industry analysis — delivered weekly. No spam.</p>
+      <p>Printed-microfluidics breakthroughs, lab-on-chip research, and organ-on-chip projects — delivered monthly. No spam.</p>
       <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.querySelector('button').textContent='Subscribed!';this.querySelector('button').disabled=true;">
         <input type="hidden" name="access_key" value="6f33053b-6d08-414b-9615-665f88c98da8">
         <input type="hidden" name="subject" value="Newsletter Signup — micro3dprint.com">
         <input type="hidden" name="from_name" value="Newsletter Signup">
-        <input type="hidden" name="ccs" value="printwire@gmail.com">
         <input type="email" name="email" placeholder="your@email.com" required>
         <button type="submit">Subscribe</button>
       </form>
     </div>
 
-    <!-- Popular Stories -->
+    <div class="ed-sidebar-block" id="suppliers">
+      <h4>Suppliers &amp; Connections</h4>
+      <div class="ed-popular-item">
+        <div>
+          <h3><a href="#">Printers &amp; Systems</a></h3>
+          <div class="ed-popular-meta">High-resolution SLA, DLP &amp; P&micro;SL platforms · 12 suppliers</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <div>
+          <h3><a href="#">Resins &amp; Materials</a></h3>
+          <div class="ed-popular-meta">Biocompatible &amp; clear microfluidic resins · 14 suppliers</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <div>
+          <h3><a href="#">Metrology &amp; Inspection</a></h3>
+          <div class="ed-popular-meta">Flow testing, micro-CT &amp; imaging services · 8 listed</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <div>
+          <h3><a href="#">Service Bureaus</a></h3>
+          <div class="ed-popular-meta">Microfluidics &amp; lab-on-chip prototyping · 15 listed</div>
+        </div>
+      </div>
+    </div>
+
     <div class="ed-sidebar-block">
       <h4>Most Read</h4>
       <div class="ed-popular-item">
         <span class="ed-popular-num">1</span>
         <div>
-          <h3><a href="#">Ti6Al4V Fatigue Data: What 500 Test Bars Reveal About As-Built vs. HIP'd Parts</a></h3>
-          <div class="ed-popular-meta">12.4K reads</div>
+          <h3><a href="#">Printed Lab-on-a-Chip Devices Skip the Cleanroom</a></h3>
+          <div class="ed-popular-meta">8.5K reads</div>
         </div>
       </div>
       <div class="ed-popular-item">
         <span class="ed-popular-num">2</span>
         <div>
-          <h3><a href="#">The Real Cost Per Part: DMLS vs. Investment Casting at Volume</a></h3>
-          <div class="ed-popular-meta">9.8K reads</div>
+          <h3><a href="#">Droplet Generators Hit Nanoliter Precision</a></h3>
+          <div class="ed-popular-meta">7.0K reads</div>
         </div>
       </div>
       <div class="ed-popular-item">
         <span class="ed-popular-num">3</span>
         <div>
-          <h3><a href="#">Binder Jetting Metal: Where It Actually Makes Sense (And Where It Doesn't)</a></h3>
-          <div class="ed-popular-meta">8.1K reads</div>
+          <h3><a href="#">Organ-on-Chip Prints with Integrated Membranes</a></h3>
+          <div class="ed-popular-meta">6.2K reads</div>
         </div>
       </div>
       <div class="ed-popular-item">
         <span class="ed-popular-num">4</span>
         <div>
-          <h3><a href="#">316L Surface Roughness: Comparing 12 Post-Processing Methods Head to Head</a></h3>
-          <div class="ed-popular-meta">7.3K reads</div>
-        </div>
-      </div>
-      <div class="ed-popular-item">
-        <span class="ed-popular-num">5</span>
-        <div>
-          <h3><a href="#">Why Your Metal AM Service Bureau Keeps Missing Tolerances (And How to Fix the RFQ)</a></h3>
-          <div class="ed-popular-meta">6.9K reads</div>
+          <h3><a href="#">Printed Microreactors Cut Reagent Volumes to Nanoliters</a></h3>
+          <div class="ed-popular-meta">5.1K reads</div>
         </div>
       </div>
     </div>
 
-    <!-- Ad Placeholder -->
     <div class="ed-sidebar-block" style="text-align:center; color: var(--text-faint); font-size: 0.75rem; padding: 2.5rem 1rem;">
       <div style="border: 1px dashed var(--border); border-radius: 4px; padding: 2rem 1rem;">
         Ad Space<br>300×250
       </div>
     </div>
 
-    <!-- Network Links -->
     <div class="ed-sidebar-block">
       <h4>PrintWire Network</h4>
       <div class="ed-network-links">
-        <a href="https://metalpowder.co">Metal Powder</a>
+        <a href="https://3dprintmicro.com">3D Print Micro</a>
         <a href="https://3dprinttissue.com">Bioprinting</a>
-        <a href="https://3dprintfood.com">Food Printing</a>
-        <a href="https://3dprintceramic.com">Ceramics</a>
         <a href="https://3dprintcircuitry.com">Electronics</a>
-        <a href="https://3dprintjewelry.com">Jewelry</a>
+        <a href="https://dmls3d.com">Metal</a>
+        <a href="https://3dprintpolymer.com">Polymers</a>
         <a href="https://3dprintarchitecture.com">Architecture</a>
-        <a href="https://3dprintpipes.com">Industrial</a>
-        <a href="https://sendcutship.com">Manufacturing</a>
-        <a href="https://dmls3d.com">DMLS3D</a>
-        <a href="https://3dprinttitanium.com">Titanium</a>
         <a href="https://3dprintsolar.com">Solar</a>
+        <a href="https://3dprintrobots.com">Robots</a>
       </div>
     </div>
 
-    <!-- Quick Quote CTA -->
-    <div class="ed-sidebar-block" style="background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(0,168,204,0.04)); border-color: var(--border-accent);">
-      <h4 style="color: var(--accent);">Get a Quote</h4>
-      <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.5;">Need metal parts printed? Describe your project and get a response within 24 hours.</p>
-      <a href="contact.html" style="display:block;text-align:center;padding:0.65rem;background:var(--accent);border-radius:4px;color:#000;font-weight:600;font-size:0.8rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent-dark)'" onmouseout="this.style.background='var(--accent)'">Request Quote</a>
+    <div class="ed-sidebar-block" style="background: linear-gradient(135deg, rgba(13,148,136,0.12), rgba(13,148,136,0.04)); border-color: var(--border-accent);">
+      <h4 style="color: var(--accent);">List Your Shop</h4>
+      <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.5;">Microfluidics printer, resin supplier, or service bureau? Get listed in the directory.</p>
+      <a href="contact.html" style="display:block;text-align:center;padding:0.65rem;background:var(--accent);border-radius:4px;color:#fff;font-weight:600;font-size:0.8rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent-dark)'" onmouseout="this.style.background='var(--accent)'">Get in Touch</a>
     </div>
 
   </aside>
 </div>
 
-<!-- ── Footer ─────────────────────────────────── -->
 <footer class="ed-footer">
   <div class="ed-footer-inner">
     <div class="ed-footer-brand">
-      <div class="ed-logo" style="font-size:1.3rem; margin-bottom: 0.5rem;">MICRO<span class="ed-logo-accent">3D</span>PRINT</div>
-      <p>The authoritative source for metal additive manufacturing news, materials research, and service bureau intelligence. Part of the PrintWire network — 194 sites covering every vertical in 3D printing.</p>
+      <div class="ed-logo" style="font-size:1.3rem; margin-bottom: 0.5rem;">MICRO&nbsp;<span class="ed-logo-accent">3D&nbsp;PRINT</span></div>
+      <p>Additive manufacturing for microfluidics — printed lab-on-a-chip devices, droplet generators, micromixers, microreactors, and organ-on-chip. News, research, and a directory connecting engineers to suppliers. Part of the PrintWire network.</p>
     </div>
     <div>
       <h4>Navigation</h4>
       <ul>
         <li><a href="index.html">News</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="/articles/">Research</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
-      <h4>Services</h4>
+      <h4>Coverage</h4>
       <ul>
-        <li><a href="services.html">DMLS / SLM</a></li>
-        <li><a href="services.html">Rapid Prototyping</a></li>
-        <li><a href="services.html">Post-Processing</a></li>
+        <li><a href="#">Microfluidics</a></li>
+        <li><a href="#">Lab-on-Chip</a></li>
+        <li><a href="#">Organ-on-Chip</a></li>
+        <li><a href="#">Microreactors</a></li>
         <li><a href="advertise.html">Advertise With Us</a></li>
       </ul>
     </div>
     <div>
-      <h4>Coverage</h4>
+      <h4>Applications</h4>
       <ul>
-        <li><a href="#">Aerospace</a></li>
-        <li><a href="#">Medical</a></li>
-        <li><a href="#">Automotive</a></li>
-        <li><a href="#">Industrial</a></li>
-        <li><a href="#">Materials</a></li>
+        <li><a href="#">Lab-on-Chip</a></li>
+        <li><a href="#">Droplet Generators</a></li>
+        <li><a href="#">Micromixers</a></li>
+        <li><a href="#">Organ-on-Chip</a></li>
       </ul>
     </div>
   </div>
   <div class="ed-footer-bottom">
-    <span>&copy; 2026 MICRO 3D PRINT. Part of the <a href="https://3dprint.space" style="color:var(--accent);">PrintWire</a> network.</span>
+    <span>&copy; 2026 Micro 3D Print. Part of the <a href="https://3dprint.space" style="color:var(--accent);">PrintWire</a> network.</span>
     <span>
       <a href="#">Privacy</a>
       <a href="#">Terms</a>
@@ -308,49 +315,35 @@
 </footer>
 
 <script>
-// ── Mobile nav toggle ──
 document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
   document.querySelector('.ed-nav').classList.toggle('open');
 });
 
-// ── Theme toggle (light/dark) ──
 (function() {
   const btn = document.getElementById('themeToggle');
   const root = document.documentElement;
-
   function setTheme(theme) {
     root.setAttribute('data-theme', theme);
     localStorage.setItem('ed-theme', theme);
     btn.innerHTML = theme === 'dark' ? '&#9790;' : '&#9728;';
     btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
   }
-
-  // Init: check saved preference, then system preference
   const saved = localStorage.getItem('ed-theme');
-  if (saved) {
-    setTheme(saved);
-  } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-    setTheme('light');
-  } else {
-    setTheme('dark');
-  }
-
+  setTheme(saved || 'light');
   btn.addEventListener('click', () => {
-    const current = root.getAttribute('data-theme') || 'dark';
+    const current = root.getAttribute('data-theme') || 'light';
     setTheme(current === 'dark' ? 'light' : 'dark');
   });
 })();
 
-// ── News Feed: PrintWire Originals + industry RSS ──
 (function() {
   var grid = document.getElementById('newsGrid');
   var orig = document.getElementById('pwOriginals');
 
   var feeds = [
-    { url: 'https://news.google.com/rss/search?q=metal+3d+printing+additive+manufacturing&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
-    { url: 'https://news.google.com/rss/search?q=DMLS+SLM+metal+printing&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
-    { url: 'https://news.google.com/rss/search?q=metal+additive+manufacturing+titanium+inconel&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
-    { url: 'https://www.metal-am.com/feed/', name: 'Metal AM' },
+    { url: 'https://news.google.com/rss/search?q=3D+printed+microfluidics+lab+on+a+chip&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://news.google.com/rss/search?q=3D+printed+microfluidic+device+organ+on+chip&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://news.google.com/rss/search?q=microreactor+micromixer+droplet+3D+printing&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
     { url: 'https://3dprintingindustry.com/feed/', name: '3DPI' }
   ];
 
@@ -359,11 +352,7 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
   var localArts = [];
   var loaded = 0;
   var total = feeds.length;
-  var fallbackImgs = [
-    'images/13-batch-build-plate-overhead.png','images/20-raw-vs-finished.png','images/15-support-removal.png',
-    'images/10-dmls-machine-interior.png','images/08-medical-implant.png','images/18-powder-handling.png',
-    'images/01-titanium-turbine.png','images/11-ded-nozzle-closeup.png'
-  ];
+  var fallbackImgs = ['images/mp01_microfluidic_chip.png','images/mp02_channel_network.png','images/mp03_droplet_junction.png','images/mp04_micro_mixer.png','images/mp05_microreactor.png','images/mp06_micro_valve.png','images/mp07_organ_chip.png','images/mp08_capillary.png','images/mp09_micro_manifold.png'];
 
   function stripHtml(html) {
     var d = document.createElement('div'); d.innerHTML = html;
@@ -382,7 +371,7 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
     var linkAttrs = a.local ? 'href="' + esc(a.link) + '"'
       : 'href="' + esc(a.link) + '" target="_blank" rel="noopener"';
     var badge = a.local
-      ? '<span class="ed-badge" style="background:var(--accent);color:#000;">' + esc(a.source) + '</span>'
+      ? '<span class="ed-badge" style="background:var(--accent);color:#fff;">' + esc(a.source) + '</span>'
       : '<span class="ed-badge">' + esc(a.source) + '</span>';
     return '<article class="ed-card" style="cursor:pointer" ' + open + '>' +
       '<img class="ed-card-img" src="' + esc(img) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' + fb + '\'">' +
@@ -393,14 +382,13 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
       '</div></article>';
   }
 
-  // 1) PrintWire's own articles (local JSON feed) — powers the featured section AND merges into the grid
-  var localReady = fetch('index.json', { cache: 'no-store' })
+  var localReady = fetch('network.json', { cache: 'no-store' })
     .then(function(r){ return r.ok ? r.json() : []; })
     .then(function(items){
       (items || []).forEach(function(it, i){
         localArts.push({ title: it.title, link: it.url, desc: it.summary || '',
-          date: it.iso, dateStr: it.date, source: 'PrintWire', local: true,
-          img: fallbackImgs[i % fallbackImgs.length] });
+          date: it.iso, dateStr: it.date, source: (it.origin || 'PrintWire'), local: true,
+          img: it.img || fallbackImgs[i % fallbackImgs.length] });
       });
       if (orig) {
         orig.innerHTML = localArts.length
@@ -410,7 +398,6 @@ document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
     })
     .catch(function(){ if (orig) orig.innerHTML = ''; });
 
-  // 2) Industry RSS
   var timeout = setTimeout(finish, 8000);
   feeds.forEach(function(feed) {
     fetch(api + encodeURIComponent(feed.url))

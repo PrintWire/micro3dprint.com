@@ -10,11 +10,11 @@
   <title>{{ .Title }} | {{ .Site.Title }}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/editorial.css">
   <style>
-  .article-content h2 { font-family: var(--font-display); margin: 2.5rem 0 1rem; color: var(--accent); font-size: 1.5rem; }
-  .article-content h3 { font-family: var(--font-display); margin: 2rem 0 0.75rem; font-size: 1.25rem; color: var(--heading); }
+  .article-content h2 { font-family: var(--font-display); margin: 2.5rem 0 1rem; color: var(--accent); font-size: 1.6rem; }
+  .article-content h3 { font-family: var(--font-display); margin: 2rem 0 0.75rem; font-size: 1.3rem; color: var(--heading); }
   .article-content p { margin-bottom: 1.5rem; color: var(--text-dim); line-height: 1.8; }
   .article-content ul, .article-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-dim); }
   .article-content li { margin-bottom: 0.5rem; line-height: 1.7; }
@@ -25,26 +25,30 @@
   .article-content hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
   .article-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
   .article-content th, .article-content td { padding: 0.75rem 1rem; border: 1px solid var(--border); color: var(--text-dim); text-align: left; }
-  .article-content th { background: var(--accent-dim); color: var(--heading); font-family: var(--font-display); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .article-content th { background: var(--accent-dim); color: var(--heading); font-family: var(--font-display); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
   .article-content img { max-width: 100%; border-radius: var(--radius); margin: 1.5rem 0; }
   </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  {{ $og := ((.Params.image | default .Site.Params.ogImage) | absURL) }}
+  <meta property="og:image" content="{{ $og }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ $og }}">
 </head>
 <body>
 
 <header class="ed-header">
   <div class="ed-header-inner">
     <a href="/" class="ed-logo">
-      {{ .Site.Params.siteName }}
+      {{ .Site.Params.logoHtml | default .Site.Params.siteName | safeHTML }}
     </a>
     <button class="ed-nav-toggle" aria-label="Menu" onclick="document.querySelector('.ed-nav').classList.toggle('open')">&#9776;</button>
     <nav class="ed-nav">
       <a href="/">News</a>
-      <a href="/services.html">Services</a>
+      <a href="/articles/" class="active">Research</a>
+      <a href="/#suppliers">Suppliers</a>
+      <a href="/#suppliers">Materials</a>
       <a href="/about.html">About</a>
-      <a href="/articles/" class="active">Articles</a>
       <a href="/contact.html">Contact</a>
-      <a href="/advertise.html">Advertise</a>
-      <a href="/viewer.html">3D Viewer</a>
     </nav>
     <button class="ed-theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">&#9790;</button>
   </div>
@@ -61,36 +65,34 @@
 <footer class="ed-footer">
   <div class="ed-footer-inner">
     <div class="ed-footer-brand">
-      <div class="ed-logo">{{ .Site.Params.siteName }}</div>
+      <div class="ed-logo">{{ .Site.Params.logoHtml | default .Site.Params.siteName | safeHTML }}</div>
       <p>{{ .Site.Params.description }} Part of the PrintWire network.</p>
     </div>
     <div>
       <h4>Navigation</h4>
       <ul>
         <li><a href="/">News</a></li>
-        <li><a href="/services.html">Services</a></li>
+        <li><a href="/articles/">Research</a></li>
         <li><a href="/about.html">About</a></li>
-        <li><a href="/articles/">Articles</a></li>
         <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <ul>
-        <li><a href="/services.html">DMLS / SLM</a></li>
-        <li><a href="/services.html">Rapid Prototyping</a></li>
-        <li><a href="/services.html">Post-Processing</a></li>
-        <li><a href="/advertise.html">Advertise With Us</a></li>
       </ul>
     </div>
     <div>
       <h4>Coverage</h4>
       <ul>
-        <li><a href="#">Aerospace</a></li>
-        <li><a href="#">Medical</a></li>
-        <li><a href="#">Automotive</a></li>
-        <li><a href="#">Industrial</a></li>
-        <li><a href="#">Materials</a></li>
+        <li><a href="#">Microfluidics</a></li>
+        <li><a href="#">Lab-on-Chip</a></li>
+        <li><a href="#">Organ-on-Chip</a></li>
+        <li><a href="/advertise.html">Advertise With Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Applications</h4>
+      <ul>
+        <li><a href="#">Lab-on-Chip</a></li>
+        <li><a href="#">Droplet Generators</a></li>
+        <li><a href="#">Micromixers</a></li>
+        <li><a href="#">Organ-on-Chip</a></li>
       </ul>
     </div>
   </div>
@@ -104,7 +106,7 @@
 </footer>
 
 <script>
-// Theme toggle
+// Theme toggle — light default
 (function() {
   var btn = document.getElementById('themeToggle');
   var root = document.documentElement;
@@ -115,11 +117,9 @@
     btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
   }
   var saved = localStorage.getItem('ed-theme');
-  if (saved) { setTheme(saved); }
-  else if (window.matchMedia('(prefers-color-scheme: light)').matches) { setTheme('light'); }
-  else { setTheme('dark'); }
+  setTheme(saved || 'light');
   btn.addEventListener('click', function() {
-    var current = root.getAttribute('data-theme') || 'dark';
+    var current = root.getAttribute('data-theme') || 'light';
     setTheme(current === 'dark' ? 'light' : 'dark');
   });
 })();
