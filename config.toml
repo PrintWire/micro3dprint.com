@@ -13,6 +13,6 @@ title = "Micro 3D Print"
 [params]
 siteName     = "Micro 3D Print"
 logoHtml     = 'MICRO&nbsp;<span class="ed-logo-accent">3D&nbsp;PRINT</span>'
-description  = "Micro 3D Print: additive manufacturing for microfluidics — printed lab-on-a-chip devices, microreactors, micromixers, and organ-on-chip. News, research, and a supplier directory."
+description  = "Micro 3D Print is a PrintWire network site about micro-scale 3D printing and microfluidics. PrintWire passes quote requests to specialised manufacturers and returns pricing. PrintWire does not manufacture parts itself."
 ogImage      = "/images/mp01_microfluidic_chip.png"
 contactEmail = "maxdavisgroup@gmail.com"

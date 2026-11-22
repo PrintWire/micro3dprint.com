@@ -62,9 +62,18 @@
             <div class="ed-form-group"><label for="company">Company / Team</label><input type="text" id="company" name="company" placeholder="Company or team name"></div>
             <div class="ed-form-group"><label for="topic">Topic</label><select id="topic" name="topic"><option value="">Select a topic</option><option value="chip">Lab-on-chip quotation</option><option value="droplet">Droplet generators &amp; mixers</option><option value="reactor">Microreactors</option><option value="organ">Organ-on-chip devices</option><option value="advertising">Advertising &amp; media partnerships</option><option value="editorial">Editorial or research inquiry</option></select></div>
             <div class="ed-form-group"><label for="details">Project Details <span class="required">*</span></label><textarea id="details" name="details" rows="5" required placeholder="Describe your project: material, quantity, load, timeline..."></textarea></div>
-            <div class="ed-form-group"><label for="file">Upload File (STL, STEP, IGES, 3DM)</label><input type="file" id="file" name="file" accept=".stl,.step,.stp,.iges,.igs,.3dm"></div>
+            <div class="ed-form-group">
+<label for="export_control">Is this part subject to ITAR or EAR? <span class="required">*</span></label>
+<select id="export_control" name="export_control" required style="width:100%;padding:0.6rem;">
+<option value="">Select an answer</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+<option value="not-sure">Not sure</option>
+</select>
+</div>
+<div class="ed-form-group"><label for="file">Upload a CAD file or PDF drawing (STL, STEP, IGES, 3DM, PDF)</label><input type="file" id="file" name="file" accept=".stl,.step,.stp,.iges,.igs,.3dm,.pdf"></div>
+<p class="pw-consent" style="font-size:0.8rem;line-height:1.5;margin:0.9rem 0;opacity:0.9;"><label style="display:flex;gap:0.5rem;align-items:flex-start;font-weight:400;text-transform:none;letter-spacing:0;"><input type="checkbox" name="consent" value="agreed" required style="width:auto;flex:none;margin-top:0.2rem;"> <span>I have the right to share these files. I agree that PrintWire may send my request, files and contact details to manufacturers to obtain pricing, and that they may contact me about this request. If I place an order, my contract is with the manufacturer, not PrintWire. I accept the <a href="/terms.html" style="text-decoration:underline;">Terms</a> and <a href="/privacy.html" style="text-decoration:underline;">Privacy Policy</a>.</span></label></p>
             <button type="submit" class="ed-form-submit">Submit Inquiry</button>
-<p class="pw-consent" style="font-size:0.8rem;line-height:1.5;margin-top:0.9rem;opacity:0.85;">By sending this form you agree that PrintWire may pass your request to manufacturers to obtain pricing. See the <a href="/privacy.html" style="text-decoration:underline;">privacy page</a>.</p>
 </form>
         </div>
       </div>
@@ -74,16 +83,44 @@
 <footer class="ed-footer">
   <div class="ed-footer-inner">
     <div class="ed-footer-brand">
-      <div class="ed-logo" style="font-size:1.3rem;margin-bottom:0.5rem;">MICRO&nbsp;<span class="ed-logo-accent">3D&nbsp;PRINT</span></div>
-      <p>Additive manufacturing for microfluidics — printed lab-on-a-chip devices, droplet generators, micromixers, microreactors, and organ-on-chip. News, research, and a directory connecting engineers to suppliers. Part of the PrintWire network.</p>
+      <div class="ed-logo" style="font-size:1.3rem; margin-bottom: 0.5rem;">MICRO&nbsp;<span class="ed-logo-accent">3D&nbsp;PRINT</span></div>
+      <p>A PrintWire network site about micro-scale 3D printing and microfluidics. PrintWire passes quote requests to specialised manufacturers and returns pricing.</p>
     </div>
-    <div><h4>Sections</h4><ul><li><a href="/">News</a></li><li><a href="/articles/">Research</a></li><li><a href="/about.html">About</a></li></ul></div>
-    <div><h4>Company</h4><ul><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/advertise.html">Advertise</a></li></ul></div>
-    <div><h4>Coverage</h4><ul><li>Microfluidics</li><li>Lab-on-Chip</li><li>Organ-on-Chip</li><li><a href="/advertise.html">Advertise</a></li></ul></div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="/">News</a></li>
+        <li><a href="/articles/">Research</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Microfluidics</li>
+        <li>Lab-on-Chip</li>
+        <li>Organ-on-Chip</li>
+        <li>Microreactors</li>
+        <li><a href="/advertise.html">Advertise With Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Applications</h4>
+      <ul>
+        <li>Lab-on-Chip</li>
+        <li>Droplet Generators</li>
+        <li>Micromixers</li>
+        <li>Organ-on-Chip</li>
+      </ul>
+    </div>
   </div>
   <div class="ed-footer-bottom">
     <span>&copy; 2026 Micro 3D Print. Part of the <a href="https://3dprint.space" style="color:var(--accent);">PrintWire</a> network.</span>
-    <span><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></span>
+    <span>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </span>
   </div>
 </footer><script>
 (function() {
